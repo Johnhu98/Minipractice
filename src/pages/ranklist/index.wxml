@@ -19,4 +19,61 @@
       </view>
     </picker>
   </view>
+  <view class="top-three">
+    <navigator class="second" url="#" hover-class="none">
+      <view class="top-image">
+        <image src="{{rank_list[1].avatar_url}}" class="avatar" />
+        <image src="../../assets/image/flower/rank2.png" class="rank-img" />
+      </view>
+      <view class="top-row">
+        <image class="rank-two" src="../../assets/image/flower/number2.png" />
+        <view class="top-line"></view>
+        <view class="top-detail">
+          <view class="list-name">{{rank_list[1].name}}</view>
+          <view class="list-points">
+            <view class="list-large">{{rank_list[1].point_int}}</view>
+            <view class="list-per">.{{rank_list[1].point_decimal}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="child-points"></view>
+    </navigator>
+    <navigator class="first" url="#" hover-class="none">
+      <view class="first-avatar">
+        <image src="{{rank_list[1].avatar_url}}" class="rank-img" />
+        <image src="../../assets/image/flower/rank1.png" class="rank-img" />
+      </view>
+      <view class="top-row">
+        <image class="rank-rank" src="../../assets/image/flower/number1.png" />
+        <view class="top-line"></view>
+        <view class="top-detail">
+          <view class="list-name">{{rank_list[0].name}}</view>
+          <view class="list-points">
+            <view class="list-large">{{rank_list[0].point_int}}</view>
+            <view class="list-per">.{{rank_list[0].point_decimal}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="child-points"></view>
+    </navigator>
+    <navigator class="third" url="#" hover-class="none">
+      <view class="top-image">
+        <image src="{{rank_list[1].avatar_url}}" class="avatar" />
+        <image src="../../assets/image/flower/rank3.png" class="rank-img" />
+      </view>
+      <view class="top-row">
+        <image class="rank-three" src="../../assets/image/flower/number3.png" />
+        <view class="top-line"></view>
+        <view class="top-detail">
+          <view class="list-name">{{rank_list[2].name}}</view>
+          <view class="list-points">
+            <view class="list-large">{{rank_list[2].point_int}}</view>
+            <view class="list-per">.{{rank_list[2].point_decimal}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="child-points"></view>
+    </navigator>
+  </view>
+  <view class="rank-list"></view>
 </view>

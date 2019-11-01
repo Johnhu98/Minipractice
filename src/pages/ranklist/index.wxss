@@ -109,3 +109,162 @@ header {
   height: 600rpx;
   border-radius: 10rpx;
 }
+
+.top-three{
+  color: #333;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.top-three > navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.second {
+  border-top-left-radius: 10px;
+}
+
+.third {
+  border-top-right-radius: 10px;
+}
+
+.second,
+.third {
+  width: 33%;
+  height: 429rpx;
+  background-color: #fff;
+}
+
+.first {
+  width: 34%;
+  background-color: #fff;
+  height: 469rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 -40rpx 18rpx 2rpx rgba(0, 0, 0, 0.06);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.top-image {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.top-image .avatar {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+
+.top-image .rank-img {
+  height: 34rpx;
+  width: 34rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.top-row {
+  max-width: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-avatar {
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.first-avatar .avatar {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+}
+
+.first-avatar .rank-img {
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.rank-two {
+  width: 32rpx;
+  height: 45rpx;
+}
+
+.rank-rank {
+  width: 28rpx;
+  height: 79rpx;
+}
+
+.rank-three {
+  width: 32rpx;
+  height: 45rpx;
+}
+
+.top-line {
+  height: 70rpx;
+  background-color: #eee;
+  width: 2rpx;
+  margin: 0 16rpx;
+}
+
+.top-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-name {
+  margin-bottom: 13rpx;
+  font-size: 28rpx;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+}
+
+.list-points {
+  display: flex;
+  flex-direction: row;
+  font-size: 36rpx;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+}
+
+.list-large {
+  line-height: 26rpx;
+}
+
+.list-per {
+  margin-left: 8rpx;
+  font-size: 24rpx;
+}
+
+.child-points{
+  margin-top: 8rpx;
+  margin-bottom: 30rpx;
+}
+
+.rank-list {
+  height: 350rpx;
+}

@@ -1,66 +1,22 @@
-// pages/ranklist/index.js
+const app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    id: '',
+    activity_list: [],
+    activity_array: [],
+    cycle_list: [
+      { title: '长期', id: 0 },
+      { title: '月榜', id: 1 },
+      { title: '周榜', id: 2 },
+      { title: '日榜', id: 3 },
+    ],
+    householdItemList: ['房前屋后', '庭院卫生', '垃圾分类'],
+    fieldItemList: ['菜地整洁', '作物长势', '病虫害情况', ''],
+    currentCycleIndex: 0,
+    rank_list: [],
+    array: [],
+    cycle_index: 0,
+    activity_index: 0,
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

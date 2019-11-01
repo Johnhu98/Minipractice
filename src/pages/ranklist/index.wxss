@@ -38,7 +38,7 @@ header {
 }
 
 .banner-title {
-  font-size: 32rpx;
+  
   margin-bottom: 29rpx;
   margin-top: 29rpx;
   z-index: 100;
@@ -47,8 +47,65 @@ header {
   align-items: center;
 }
 
+.weui-btn {
+  width: auto;
+  font-size: 32rpx;
+}
+
 .picker-image {
   width: 24rpx;
   height: 13rpx;
   margin-left: 5rpx;
+}
+
+.banner-cycle {
+  font-size: 22rpx;
+  line-height: 22rpx;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner-cycle > view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 34rpx;
+  font-size: 22rpx;
+}
+
+.normal {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.active {
+  background-color: #fff;
+  border-radius: 17rpx;
+  font-weight: bold;
+  color: #ee413b;
+}
+
+.cycle-picker {
+  height: 50rpx;
+  width: 170rpx;
+  margin-top: 50rpx;
+  background-color: #fa837e;
+  border-radius: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+}
+
+.ranklist-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 90%;
+  height: 600rpx;
+  border-radius: 10rpx;
 }

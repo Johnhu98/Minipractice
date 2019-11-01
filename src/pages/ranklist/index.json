@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "header": "/components/headerBar/index"
+  },
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}

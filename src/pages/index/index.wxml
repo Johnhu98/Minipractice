@@ -1,0 +1,131 @@
+<!--index.wxml-->
+
+<view class="main-contianer">
+    <view class="search-container">
+      <view class="search-box" hidden="{{statusActive === true || typeActive ===true}}">
+        <image src="../../assets/image/search.png" />
+        <input confirm-type="search" placeholder="搜索点什么?" type="text" value="{{search}}" bindconfirm="search" />
+      </view>
+      <button class="code-container" open-type="getUserInfo" bindgetuserinfo="scanner">
+	  					<view>
+	  							<image src="../../assets/image/scanner.png" />
+	  					</view>
+	  					<text>扫一扫</text>
+	  	</button>
+    </view>
+    <swiper autoplay="{{autoplay}}" circular easing-function="easeOutCubic" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+          <image class="swiper-image" src="{{item.pic_url}}" />
+        </swiper-item>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <view class="dot {{index == swiperIndex ? 'active' : ''}}"></view>
+      </block>
+    </view>
+    <view class="activity-container">
+        <view class="activity-box">
+          <button open-type="getUserInfo" bindgetuserinfo="creatActivity">
+            <image src="../../assets/image/activity_init.png" class="activity-image" />
+	  	  		<view class="activity-content">
+	  	  				<text>我要发起</text>
+	  	  				<view>
+	  	  						建设戴村
+	  	  						<image src="../../assets/image/arrow_full.png" />
+	  	  				</view>
+	  	  		</view>
+          </button>
+        </view>
+        <view class="activity-box">
+          <button open-type="getUserInfo" bindgetuserinfo="attendActivity">
+            <image src="../../assets/image/activity_part.png" class="activity-image" />
+	  	  		<view class="activity-content">
+	  	  				<text>我要参与</text>
+	  	  				<view>
+	  	  						建设戴村
+	  	  						<image src="../../assets/image/arrow_full.png" />
+	  	  				</view>
+	  	  		</view>
+          </button>
+        </view>
+    </view>
+</view>
+<view class="top-activity {{iphone ? 'iphone' : ''}}">
+    <view class="top-header">我要赚积分</view>
+    <view style="{{statusActive === true || typeActive === true ? 'position: flex; width: 100%' : ''}}">
+      <view class="header-container">
+        <view bindtap="chooseStatus">
+          {{statusName}}
+          <image class="{{statusActive ? 'status-active' : ''}}" src="/assets/image/arrow_down.png" />
+        </view>
+        <view bindtap="chooseTime">
+          时间排序
+          <image class="{{timeActive ? 'time-active' : ''}}" src="/assets/image/arrow_up.png" />
+        </view>
+        <view bindtap="choosePlace">
+          地点
+          <image class="{{placeActive ? 'place-active' : ''}}" src="/assets/image/arrow_down.png" />
+        </view>
+        <view bindtap="chooseType">
+          筛选
+          <image src="/assets/image/filter.png" />
+        </view>
+      </view>
+      <view class="mask" wx:if="{{statusActive || typeActive || placeActive}}" catchtap="closeMask" />
+      <view class="choose-container" hidden="{{!statusActive}}">
+        <block wx:for="{{statusList}}" wx:key="{{index}}">
+          <view bindtap="chooseItem" data-id="{{item.id}}" data-name="{{item.name}}" class="choose-item {{statusId ===item.id ? 'active' : ''}}">
+            {{item.name}}
+            <image wx:if="{{statusId === item.id}}" src="/assets/image/green_check.png"/>
+          </view>
+        </block>
+      </view>
+      <view class="choose-container" hidden="{{!placeActive}}">
+        <view class="place-contianer">
+          <view>
+            <block wx:for="{{placeList}}" wx:key="{{index}}">
+              <view bindtap="choosePrimaryPlace" data-id="{{item.id}}" data-name="{{item.name}}" class="choose-item {{primaryId ===item.id ? 'active' : ''}}">
+                {{item.village_name}}
+                <image wx:if="{{item.active === true}}" src="/assets/image/green_check.png"/>
+              </view>
+            </block>
+            <block wx:for="{{secondplaceList}}" wx:key="{{index}}">
+              <view bindtap="chooseSecondPrimaryPlace" data-id="{{item.id}}" data-name="{{item.name}}" class="choose-item {{primaryId ===item.id ? 'active' : ''}}">
+                {{item.village_name}}
+                <image wx:if="{{item.active === true}}" src="/assets/image/green_check.png"/>
+              </view>
+            </block>
+          </view>
+        </view>
+        <view class="choose-btn">
+          <button>清空</button>
+          <button>确定</button>
+        </view>     
+      </view>
+      <view class="choose-container" hidden="{{!typeActive}}">
+        <title>活动类型 （多选)</title>
+        <view class="type-container">
+          <block wx:for="{{typeList}}" wx:key="{{index}}">
+            <view bindtap="chooseTypes" data-id="{{item.id}}" data-name="{{item.name}}" class="choose-types {{item.active ===true ? 'type-active' : ''}}">
+              {{item.name}}
+            </view>
+          </block>
+        </view>
+        <view class="choose-btn">
+          <button bindtap="clearType">清空</button>
+          <button bindtap="closeMask">确定</button>
+        </view>
+      </view>
+      <view class="image-content" wx:if="{{activityList.length !== 0}}">
+        <image src="../../assets/image/not_found_content.png" />
+      </view>
+    </view>
+    <navigator url="/pages/about/index?type=aboutUs" class="aboutTitle">
+      <text>关于</text>
+      <text>我们</text>
+    </navigator>
+    <navigator url="#" class="aboutTitle down">
+      <image src="/assets/image/share.png" />
+    </navigator>
+</view>
+

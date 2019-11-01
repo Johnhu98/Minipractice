@@ -1,0 +1,306 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.1",
+	"appid": "wx2542377d59f3018b",
+	"projectname": "src",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 33,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/authentication/index",
+					"pathName": "pages/authentication/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/comment/index",
+					"pathName": "pages/comment/index",
+					"query": "id=16",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/flowerRanklist/index",
+					"pathName": "pages/flowerRanklist/index",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/verify/index",
+					"pathName": "pages/verify/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/signIn/index",
+					"pathName": "pages/signIn/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/scanner/index",
+					"pathName": "pages/scanner/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/activityExamine/index",
+					"pathName": "pages/activityExamine/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/entry/index",
+					"pathName": "pages/entry/index",
+					"query": "id=1",
+					"scene": 1011
+				},
+				{
+					"id": -1,
+					"name": "pages/pointMall/index",
+					"pathName": "pages/pointMall/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/signIn/index",
+					"pathName": "pages/signIn/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/signIn/index",
+					"pathName": "pages/signIn/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "pages/activityInit/index",
+					"pathName": "pages/activityInit/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activityDetail/index",
+					"pathName": "pages/activityDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activityOrganization/index",
+					"pathName": "pages/activityOrganization/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/participatoryActivity/index",
+					"pathName": "pages/participatoryActivity/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/failureReason/index",
+					"pathName": "pages/failureReason/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "pages/signIn/index",
+					"pathName": "pages/signIn/index",
+					"query": "id=1&sign_type=sign_in",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "pages/activitySignUp/index",
+					"pathName": "pages/activitySignUp/index",
+					"query": "type=1",
+					"scene": null
+				},
+				{
+					"id": 19,
+					"name": "pages/signInList/index",
+					"pathName": "pages/signInList/index",
+					"query": "id=1&type=sign_in",
+					"scene": null
+				},
+				{
+					"id": 22,
+					"name": "pages/scanner/index",
+					"pathName": "pages/scanner/index",
+					"query": "name=呵呵&id=1",
+					"scene": null
+				},
+				{
+					"id": 23,
+					"name": "pages/report/index",
+					"pathName": "pages/report/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/comment/index",
+					"pathName": "pages/comment/index",
+					"query": "name=呵呵&id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/transferActivity/index",
+					"pathName": "pages/transferActivity/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/createActIntroduction/index",
+					"pathName": "pages/createActIntroduction/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activityIntroduction/index",
+					"pathName": "pages/activityIntroduction/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/createActNotice/index",
+					"pathName": "pages/createActNotice/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pointRule/index",
+					"pathName": "pages/pointRule/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/historyField/index",
+					"pathName": "pages/historyField/index",
+					"query": "title=历史用肥&owner=1335",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/about/index",
+					"pathName": "pages/about/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/scanner/index",
+					"pathName": "pages/scanner/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activitySignUp/index",
+					"pathName": "pages/activitySignUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/createActInfo/index",
+					"pathName": "pages/createActInfo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/createActNotice/index",
+					"pathName": "pages/createActNotice/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/ranklist/index",
+					"pathName": "pages/ranklist/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

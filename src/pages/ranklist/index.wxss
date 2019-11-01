@@ -1,0 +1,54 @@
+/* pages/ranklist/index.wxss */
+.red {
+  background-color: #f24b4f;
+}
+
+header {
+  margin-bottom: 38rpx;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.banner {
+  position: relative;
+  color: #fffefe;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 40rpx;
+  z-index: 100;
+}
+
+.banner-image {
+  height: 412rpx;
+  width: 378rpx;
+  position: absolute;
+  top: 10rpx;
+  right: -30rpx;
+}
+
+.banner-title {
+  font-size: 32rpx;
+  margin-bottom: 29rpx;
+  margin-top: 29rpx;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.picker-image {
+  width: 24rpx;
+  height: 13rpx;
+  margin-left: 5rpx;
+}

@@ -1,0 +1,34 @@
+<view class="container" style="padding-top: {{ statusBarHeight + 44 }}px">
+  <view class="header" style="background-color: {{bgcolor}}; color:{{color}}">
+    <view class="status-bar" style="height: {{statusBarHeight}}px" />
+    <view 
+     wx:if="{{ normal }}"
+     class='title-bar_normal'
+     style='height:44px'
+    >
+      <navigator 
+       wx:if="{{ scanner }}"
+       open-type="switchTab"
+       hover-class="none"
+       url="/pages/index/index"
+      >
+        <image src="../../assets/image/home.png" class="home-btn" />
+      </navigator>
+      <navigator 
+       wx:else
+       open-type="navigateBack"
+       hover-class="none"
+      >
+        <image src="../../assets/image/arrow_left.png" />
+      </navigator>
+      <view>{{ title }}</view>
+    </view>
+    <view 
+     wx:else
+     class="title-bar"
+     style="height:44px;font-size: {{fontsize}}rpx"
+    >
+      <view>{{title}}</view>
+    </view>
+  </view>
+</view>

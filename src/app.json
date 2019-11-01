@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ranklist/index",
+    "pages/user/index",
+    "pages/activityAll/index",
+    "pages/quickCreateAct/index",
+    "pages/register/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#749C74",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/image/index_unseleted.png",
+        "selectedIconPath": "assets/image/index.png"
+      },
+      {
+        "pagePath": "pages/ranklist/index",
+        "text": "红花榜",
+        "iconPath": "assets/image/flower.png",
+        "selectedIconPath": "assets/image/flower.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "assets/image/user_unselected.png",
+        "selectedIconPath": "assets/image/user.png"
+      }
+    ]
+  },
+    "sitemapLocation": "sitemap.json"
+}

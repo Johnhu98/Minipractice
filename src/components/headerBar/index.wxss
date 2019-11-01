@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 102;
+  width: 100%;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  font-size: 50rpx;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  margin-left: 42rpx;
+}
+
+.title-bar_normal {
+  font-size: 38rpx;
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title-bar_normal image {
+  width: 20rpx;
+  height: 35rpx;
+}
+
+.title-bar_normal image.home-btn {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.title-bar_normal navigator {
+  width: 50rpx;
+  height: 100%;
+  position: absolute;
+  left: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

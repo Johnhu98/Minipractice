@@ -1,0 +1,13 @@
+<!--pages/ranklist/index.wxml-->
+<view class="page red">
+  <header bgcolor="#F24B4F" color="#FFF" title="红花榜" />
+  <view class="banner">
+    <image class="banner-image" src="../../assets/image/flower/red_banner.png" />
+    <picker bindchange="bindPickerActivity" value="{{index}}" range="{{activity_array}}">
+      <view class="banner-title">
+        {{activity_array[activity_index]}}活动排名
+        <image class="picker-image" src="../../assets/image/flower_arrow.png" />
+      </view>
+    </picker>
+  </view>
+</view>
